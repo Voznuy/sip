@@ -23,7 +23,7 @@
 #####################################################################################
 set -e
 SCRIPTVER="1.10"
-ASTVERSION=21
+ASTVERSION=20
 PHPVERSION="8.2"
 LOG_FOLDER="/var/log/pbx"
 LOG_FILE="${LOG_FOLDER}/freepbx17-install-$(date '+%Y.%m.%d-%H.%M.%S').log"
