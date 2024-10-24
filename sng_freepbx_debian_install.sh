@@ -31,7 +31,7 @@ log=$LOG_FILE
 SANE_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Check for root privileges
-if [[ $EUID -ne 0 ]]; then
+if [ $EUID -ne 0 ]; then
    echo "This script must be run as root"
    exit 1
 fi
@@ -42,7 +42,7 @@ if ! grep -q "export PATH=$SANE_PATH" /root/.bashrc; then
   export PATH=$SANE_PATH
 fi
 
-while [[ $# -gt 0 ]]; do
+while [ $# -gt 0 ]; do
 	case $1 in
 		--testing)
 			testrepo=true
